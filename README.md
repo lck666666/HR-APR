@@ -14,3 +14,18 @@ International Conference on Robotics and Automation (ICRA) 2024<br>
 git clone https://github.com/lck666666/HR-APR.git
 pip install json numpy matplotlib
 ```
+
+
+
+
+## Citation
+Please cite our paper and star this repo if you find our work helpful. Thanks!
+```
+@inproceedings{liu2024hrapr,
+title = {HR-APR: APR-agnostic Framework with Uncertainty Estimation and Hierarchical Refinement for Camera Relocalisation},
+author={Changkun Liu and Shuai Chen and Yukun Zhao and Huajian Huang and Victor Prisacariu and Tristan Braud},
+booktitle = {International Conference on Robotics and Automation (ICRA)},
+year = {2024},
+organization={IEEE}
+}
+```
