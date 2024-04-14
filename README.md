@@ -12,11 +12,16 @@ International Conference on Robotics and Automation (ICRA) 2024<br>
 ## Usage
 ```
 git clone https://github.com/lck666666/HR-APR.git
+cd HR-APR
 pip install json numpy matplotlib
 ```
 
-## Show HR-APR results
-
+## Show HR-APR results in the paper
+We already prepared the `txt` results files for three APRs:`DFNet, MS-Transformer, PoseNet` in `APR/7Scenes` and `APR/Cambridge`. we provide `scene_test_gt.txt, scene_train_gt.txt, scene_predict.txt, scene_Nefes_N.txt`, where `N=10,30,50` presents running the refinement process for `n` iterations.
+```
+python hr_apr_7s.py --apr DFNet --scene fire --gamma 0.95
+python hr_apr_cam.py --apr DFNet --scene KingsCollege --gamma 0.96
+```
 
 
 
