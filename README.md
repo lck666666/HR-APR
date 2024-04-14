@@ -15,8 +15,17 @@ git clone https://github.com/lck666666/HR-APR.git
 pip install json numpy matplotlib
 ```
 
+## Show HR-APR results
 
 
+
+
+## Try the whole pipeline 
+We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch), then generate `.npy`feature for each image.
+
+
+## Acknowledgement
+Part of our Extractor implementation is referenced from the reproduced PoseNet code [here](https://github.com/youngguncho/PoseNet-Pytorch?tab=readme-ov-file). Thanks [@youngguncho](https://github.com/youngguncho) for the excellent work!
 
 ## Citation
 Please cite our paper and star this repo if you find our work helpful. Thanks!
