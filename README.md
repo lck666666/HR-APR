@@ -11,6 +11,6 @@ International Conference on Robotics and Automation (ICRA) 2024<br>
 
 ## Usage
 ```
-git clone https://github.com/HuajianUP/360Loc.git
+git clone https://github.com/lck666666/HR-APR.git
 pip install json numpy matplotlib
 ```
