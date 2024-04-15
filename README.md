@@ -19,6 +19,7 @@ pip install json numpy matplotlib
 ## Show HR-APR results in the paper
 We already prepared the `txt` results files for three APRs:`DFNet, MS-Transformer, PoseNet` in `APR/7Scenes` and `APR/Cambridge`. we provide `scene_test_gt.txt, scene_train_gt.txt, scene_predict.txt, scene_Nefes_N.txt`, where `N=10,30,50` presents running the refinement process for `n` iterations.
 ```
+cd uncertainty_module
 python hr_apr_7s.py --apr DFNet --scene fire --gamma 0.95
 python hr_apr_cam.py --apr DFNet --scene KingsCollege --gamma 0.96
 ```
@@ -26,11 +27,13 @@ python hr_apr_cam.py --apr DFNet --scene KingsCollege --gamma 0.96
 ## Visualization
 You can generate the Fig.4 in the main paper by executing
 ```
+cd visualization
 python errorChange7s.py --apr DFNet --gamma 0.95
 python errorChangeCam.py --apr DFNet --gamma 0.95
 ```
 You can generate the Fig.5 in the main paper by executing
 ```
+cd visualization
 python plotSimiErrorRatio.py --apr DFNet
 python plotSimiErrorRot --apr DFNet
 python plotSimiErrorTrans --apr DFNet
@@ -41,8 +44,10 @@ python plotSimiErrorTrans --apr DFNet
 ## Try the whole pipeline 
 We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check the readme of [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch) and use the code in our feature_extractor, then generate `.npy`feature for each image. To generate the same files in `APR/simi_ranking`, you can execute 
 ```
-
+python cal_7s_simi.py --apr DFNet --scene fire
+python cal_cam_simi.py --apr DFNet --scene KingsCollege
 ```
+To get Nefes refinement predictions of each APR, you can check the CVPR2024 [paper](https://github.com/ActiveVisionLab/NeFeS).
 
 
 ## Acknowledgement
@@ -57,5 +62,14 @@ author={Changkun Liu and Shuai Chen and Yukun Zhao and Huajian Huang and Victor 
 booktitle = {International Conference on Robotics and Automation (ICRA)},
 year = {2024},
 organization={IEEE}
+}
+```
+If you are also interested in the pose refinement module, please cite
+```
+@article{chen2023refinement,
+  title={Refinement for Absolute Pose Regression with Neural Feature Synthesis},
+  author={Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jiawang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
+  journal={arXiv preprint arXiv:2303.10087},
+  year={2023}
 }
 ```
