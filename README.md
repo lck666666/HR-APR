@@ -9,7 +9,7 @@ This is the official repo of paper "HR-APR: APR-agnostic Framework with Uncertai
 HKUST CSE<sup>1</sup>, HKUST ISD<sup>2</sup>, Active Vision Lab, University of Oxford<sup>3</sup> <br>
 International Conference on Robotics and Automation (ICRA) 2024<br>
 ![framework](images/framework.png)
-![uncertainty](images/uncertainty_estimation_module.jpg)
+![uncertainty](images/uncertainty_estimation_module.png)
 ## Usage
 ```
 git clone https://github.com/lck666666/HR-APR.git
