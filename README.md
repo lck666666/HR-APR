@@ -40,9 +40,7 @@ python plotSimiErrorRot --apr DFNet
 python plotSimiErrorTrans --apr DFNet
 ```
 
-
-
-## Try the whole pipeline 
+## Try the whole pipeline from scratch
 We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check the readme of [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch) and use the code in our feature_extractor, then generate `.npy`feature for each image. To generate the same files in `APR/simi_ranking`, you can execute 
 ```
 python cal_7s_simi.py --apr DFNet --scene fire
