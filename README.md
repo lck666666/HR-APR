@@ -17,7 +17,7 @@ pip install json numpy matplotlib
 ```
 
 ## Show HR-APR results in the paper
-We already prepared the `txt` results files for three APRs:`DFNet, MS-Transformer, PoseNet` in `APR/7Scenes` and `APR/Cambridge`. we provide `scene_test_gt.txt, scene_train_gt.txt, scene_predict.txt, scene_Nefes_N.txt`, where `N=10,30,50` presents running the refinement process for `n` iterations.
+We already prepared the `txt` results files for three APRs:`DFNet, MS-Transformer, PoseNet` in `APR/7Scenes` and `APR/Cambridge`. we provide `scene_test_gt.txt, scene_train_gt.txt, scene_predict.txt, scene_Nefes_N.txt`, where `N=10,30,50` presents running the refinement process for `N` iterations.
 ```
 cd uncertainty_module
 python hr_apr_7s.py --apr DFNet --scene fire --gamma 0.95
