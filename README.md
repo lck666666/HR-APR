@@ -23,10 +23,26 @@ python hr_apr_7s.py --apr DFNet --scene fire --gamma 0.95
 python hr_apr_cam.py --apr DFNet --scene KingsCollege --gamma 0.96
 ```
 
+## Visualization
+You can generate the Fig.4 in the main paper by executing
+```
+python errorChange7s.py --apr DFNet --gamma 0.95
+python errorChangeCam.py --apr DFNet --gamma 0.95
+```
+You can generate the Fig.5 in the main paper by executing
+```
+python plotSimiErrorRatio.py --apr DFNet
+python plotSimiErrorRot --apr DFNet
+python plotSimiErrorTrans --apr DFNet
+```
+
 
 
 ## Try the whole pipeline 
-We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch), then generate `.npy`feature for each image.
+We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check the readme of [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch) and use the code in our feature_extractor, then generate `.npy`feature for each image. To generate the same files in `APR/simi_ranking`, you can execute 
+```
+
+```
 
 
 ## Acknowledgement
