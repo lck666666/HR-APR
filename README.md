@@ -52,7 +52,7 @@ To get Nefes refinement predictions of each APR, you can check the CVPR2024 [pap
 
 
 ## Acknowledgement
-Part of our Extractor implementation is referenced from the reproduced PoseNet code [here](https://github.com/youngguncho/PoseNet-Pytorch?tab=readme-ov-file). Thanks [@youngguncho](https://github.com/youngguncho) for the excellent work!
+Our feature extractor implementation is referenced and modified from the reproduced PoseNet code [here](https://github.com/youngguncho/PoseNet-Pytorch?tab=readme-ov-file). Thanks [@youngguncho](https://github.com/youngguncho) for the excellent work!
 
 ## Citation
 Please cite our paper and star this repo if you find our work helpful. Thanks!
