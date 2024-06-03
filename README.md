@@ -18,13 +18,15 @@ pip install json numpy matplotlib
 ```
 
 ## Show HR-APR results in the paper
-We already prepared the `txt` results files for three APRs:`DFNet, MS-Transformer, PoseNet` in `APR/7Scenes` and `APR/Cambridge`. We provide `scene_test_gt.txt, scene_train_gt.txt, scene_predict.txt, scene_Nefes_N.txt`, where `N=10,30,50` presents running the refinement process for `N` iterations. We provide the similarity score of each images in `APR/simi_ranking`.
+We already prepared the `txt` results files for three APRs:`DFNet, MS-Transformer, PoseNet` in `APR/7Scenes` and `APR/Cambridge`. We provide `scene_test_gt.txt, scene_train_gt.txt, scene_predict.txt, scene_Nefes_N.txt`, where `N=10,30,50` presents running the refinement process for `N` iterations. We provide the similarity score of each images in `APR/simi_ranking`. 
 ```
 cd uncertainty_module
 python hr_apr_7s.py --apr DFNet --scene fire --gamma 0.95
 python hr_apr_cam.py --apr DFNet --scene KingsCollege --gamma 0.96
 ```
-
+For all pose files, the format is 
+```image_name x y z qw qx qy qz```.
+```x, y, z``` are camera to world coordinates.
 ## Visualization
 You can generate the Fig.4 in the main paper by executing
 ```
