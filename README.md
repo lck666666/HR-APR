@@ -43,7 +43,12 @@ python plotSimiErrorTrans --apr DFNet
 ```
 
 ## Try the whole pipeline from scratch
-We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check the readme of [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch) and use the code in our feature_extractor, then generate `.npy`feature for each image. To generate the same files in `APR/simi_ranking`, you can execute 
+We release the uncertainty module and visualization code in this repo. For feature extractor depicted in the paper, you can check the readme of [PoseNet-Pytorch](https://github.com/youngguncho/PoseNet-Pytorch) and use the code in our ```./feature_extractor```, to do the feature extraction for PoseNet model, download the datasets [Cambridge Landmarks](https://paperswithcode.com/dataset/cambridge-landmarks) and [7Scenes](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/), put datasets in ```./feature_extractor/posenet```
+```
+cd ./feature_extractor
+python test.py --image_path ./posenet/dataset/scene --metadata_path ./posenet/dataset/scene/dataset_test.txt --model Efficientnet
+```
+then, the feature descriptors are stored in ```.npy``` format as shown in the line 318 of ```./feature_extractor/solver.py``` by running ```test.py```.  To generate the same files in `APR/simi_ranking`, you can execute 
 ```
 python cal_7s_simi.py --apr DFNet --scene fire
 python cal_cam_simi.py --apr DFNet --scene KingsCollege
