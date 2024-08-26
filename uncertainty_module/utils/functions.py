@@ -58,7 +58,7 @@ def getPos(img_path,test_gt_file):
 def get_test_file(test_gt_file):
     text = []
     with open(test_gt_file) as f:
-        for line in f.readlines()[3:]:
+        for line in f.readlines():
             data = line.split('\n')
             for stri in data:
                 if stri != '':
@@ -92,7 +92,7 @@ def retrievalImg(pos_out,gt_file,dist_th):
     pose_next = False
     text = []
     with open(gt_file) as f:
-        for line in f.readlines()[3:]:
+        for line in f.readlines():
             data = line.split('/t/n')
             for str in data:
                 sub_str = str.split(' ')

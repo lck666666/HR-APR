@@ -15,7 +15,7 @@ def main(parser):
     simi_th = float(args.gamma)
     dist_th = 0.2
     dist_str = str(dist_th).replace('0.','') + '0'
-    test_simi_file = f'../{apr}/simi_ranking/df_{scene}_simi_{dist_str}.txt'
+    test_simi_file = f'../{apr}/simi_ranking/{scene}_simi_{dist_str}.txt'
     nefes50_file = f'../{apr}/7Scenes/{scene}_Nefes_50.txt'
     nefes10_file = f'../{apr}/7Scenes/{scene}_Nefes_10.txt'
     test_list = get_test_file(test_gt_file)
