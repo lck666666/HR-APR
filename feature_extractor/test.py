@@ -53,7 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_workers', type=int, default=1)
 
     # Test settings
-    parser.add_argument('--test_model', type=str, default='49')
+    parser.add_argument('--test_model', type=str, default='best')
     parser.add_argument('--save_result', type=bool, default=True)
 
     # Misc
