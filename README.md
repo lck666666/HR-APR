@@ -77,10 +77,12 @@ organization={IEEE}
 ```
 If you are also interested in the pose refinement module, please cite
 ```
-@article{chen2023refinement,
-  title={Refinement for Absolute Pose Regression with Neural Feature Synthesis},
-  author={Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jiawang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
-  journal={arXiv preprint arXiv:2303.10087},
-  year={2023}
+@inproceedings{chen2024nefes,
+  author    = {Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jia-Wang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
+  title     = {Neural Refinement for Absolute Pose Regression with Feature Synthesis},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2024},
+  pages     = {20987-20996}
 }
 ```
